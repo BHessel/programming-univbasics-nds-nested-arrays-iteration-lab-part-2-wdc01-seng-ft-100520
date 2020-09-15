@@ -13,5 +13,3 @@ def find_min_in_nested_arrays(src)
   end
 out_pos += 1 
 end
-
-min_count
