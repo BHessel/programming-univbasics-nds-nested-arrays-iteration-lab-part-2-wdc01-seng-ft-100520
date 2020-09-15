@@ -1,9 +1,9 @@
 def find_min_in_nested_arrays(src)
-  out_pos = 0 
-  min_count = []
+  array_row = 0 
+  min_results = []
   
-  while out_pos < src.count do
-    inside_pos = 0 
+  while array_row < src.count do
+    array_element = 0 
     min_number = []
     while inside_pos < src[out_pos].count do
      if src[out_pos][inside_pos] < min_number
