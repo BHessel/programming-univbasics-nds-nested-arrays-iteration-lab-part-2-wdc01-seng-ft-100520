@@ -27,3 +27,5 @@ end
 #now I'm looping through the elements in that array, and if the element is < the last, it becomes the new_min
 #I then push that new_min to the min_results
 #and recount the next array
+
+#UPDATE AT END: to make the original temp more dynamic (how would I kn)
