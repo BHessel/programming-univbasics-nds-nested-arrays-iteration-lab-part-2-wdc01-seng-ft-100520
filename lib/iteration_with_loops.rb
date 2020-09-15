@@ -3,7 +3,7 @@ def find_min_in_nested_arrays(src)
   min_count = []
   
   while out_pos < src.count do
-    inside_pos
+    inside_pos = 0 
     while inside_pos < src[out_pos].count do
      if src[out_pos][inside_pos].min
        min_count << src[out_pos][inside_pos]
