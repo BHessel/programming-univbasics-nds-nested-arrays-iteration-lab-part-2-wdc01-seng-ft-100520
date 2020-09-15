@@ -4,19 +4,25 @@ def find_min_in_nested_arrays(src)
   
   while array_row < src.count do
     array_element = 0 
+    new_min = 200
     while array_element < src[array_row].count do
-      src[array_row].min << min_results
+      if src[array_row][array_element] < new_min
+        new_min = src[array_row][array_element]
      end
+     array_element += 1 
     end
-  min_count << min_number
-  out_pos += 1 
+  min_results << new_min
+  array_row += 1
   end
-min_count
-end
+end #this ends the method 
 
 
 #first I'm setting the start point for the array
 #then I'm giving it a new array (min_results) to push the minimum temperatures to
-#now I need to scan the first array, and set the position for counting the elements in that array
-#while looping through those elements, I need to isolate the min temperature and push it to the new array (min_results)
-#Here's 
+#now I need to scan the first array (while loop 1), and set the position for counting the elements in that array
+#im also adding a new minimum temperature to compare to, and temps dont reach 200
+#while looping through those elements, I need to isolate the min temperature, so:
+#if the element (temperature) is < 200 (temps don't go that high, safe bet?), it replaces new_min with that element
+#now I'm looping through the elements in that array, and if the element is < the last, it becomes the new_min
+#I then push that new_min to the min_results
+#and recount the next array
