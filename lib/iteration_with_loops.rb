@@ -28,4 +28,4 @@ end
 #I then push that new_min to the min_results
 #and recount the next array
 
-#UPDATE AT END: to make the original temp more dynamic (how would I kn)
+#UPDATE AT END: to make the original temp more dynamic (what if I don't know that I'm scanning temperatures and that 200 is an impossibly high temp?), I modified line 7 from new_min=200 to what it is now
